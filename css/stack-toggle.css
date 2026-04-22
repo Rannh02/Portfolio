@@ -1,0 +1,90 @@
+/* ── Tech Stack Toggle ── */
+.stack-toggle-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem 0 2rem;
+}
+
+.stack-arrow-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #555;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  transition: color 0.2s;
+}
+
+.stack-arrow-btn:hover {
+  color: #c8973a; /* matches your highlight color */
+}
+
+.stack-arrow-btn .arrow-label {
+  font-size: 0.75rem;
+}
+
+.stack-arrow-btn i {
+  font-size: 1.1rem;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.stack-arrow-btn.open i {
+  transform: rotate(180deg);
+}
+
+/* Panel */
+.stack-panel {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.35s ease;
+  width: 100%;
+  max-width: 700px;
+}
+
+.stack-panel.open {
+  max-height: 300px;
+  opacity: 1;
+}
+
+/* Grid of icons */
+.stack-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1.5rem 1rem;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.stack-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  transition: transform 0.2s ease;
+}
+
+.stack-item:hover {
+  transform: translateY(-4px);
+}
+
+.stack-item img {
+  width: 42px;
+  height: 42px;
+}
+
+.stack-item span {
+  font-size: 0.72rem;
+  color: #777;
+  font-weight: 500;
+}
