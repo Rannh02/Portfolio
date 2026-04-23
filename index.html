@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/stack-toggle.css">
-    <link rel="stylesheet" href="css/stack.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -22,17 +21,20 @@
             <a href="#">Projects</a>
             <a href="#">Contact</a>
         </nav>
-        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
-            <i class="fa-solid fa-moon"></i>
-            <i class="fa-solid fa-sun"></i>
-        </button>
     </header>
 
     <section class="hero">
         <img src="assets/images/IMG_0560.JPG" alt="Ralph" class="avatar">
 
         <div class="hero-content">
-            <h1>Hi, I'm <span class="highlight">Ralph</span></h1>
+            <div class="title-with-toggle">
+                <h1>Hi, I'm <span class="highlight">Ralph</span></h1>
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fa-solid fa-moon"></i>
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+                <h4>Change Appearance</h4>
+            </div>
 
             <p class="pronouns">(He/Him)</p>
             <p class="self-intro">Information Technology student specializing in full-stack web development and mobile
