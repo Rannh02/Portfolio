@@ -92,6 +92,10 @@
         gap: 1.5rem;
     }
 
+    .title-with-toggle {
+        justify-content: center;
+    }
+
     .hero-links {
         justify-content: center;
     }

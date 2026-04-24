@@ -44,8 +44,13 @@ nav a:hover {
 
 @media (max-width: 768px) {
     header {
-        gap: 2rem;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
         padding: 1rem;
+    }
+
+    nav {
+        gap: 1rem;
     }
 }
