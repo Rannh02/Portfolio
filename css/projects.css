@@ -15,10 +15,11 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
+    align-items: start;
 }
 
 .project-card {
-    background: #fff;
+    background: var(--card-bg);
     border: 1px solid var(--border-color);
     border-radius: 20px;
     overflow: hidden;
@@ -30,14 +31,14 @@
 .project-card:hover {
     transform: translateY(-8px);
     box-shadow: var(--shadow-medium);
-    border-color: #e0e0e0;
+    border-color: var(--accent-color);
 }
 
 .project-image {
     width: 100%;
     height: 180px;
     overflow: hidden;
-    background: #f9f9f9;
+    background: var(--border-color);
 }
 
 .project-image img {
@@ -69,10 +70,6 @@
     font-size: 0.95rem;
     color: var(--secondary-color);
     margin-bottom: 1.25rem;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
 }
 
 .project-tags {
