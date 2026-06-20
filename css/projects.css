@@ -5,10 +5,13 @@
 }
 
 .section-title {
-    font-size: 1.5rem;
+    font-family: 'Azeret Mono', monospace;
+    font-size: 1.35rem;
     font-weight: 700;
     color: var(--primary-color);
     margin-bottom: 2rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
 }
 
 .projects-grid {
@@ -21,7 +24,7 @@
 .project-card {
     background: var(--card-bg);
     border: 1px solid var(--border-color);
-    border-radius: 20px;
+    border-radius: 10px;
     overflow: hidden;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
@@ -38,7 +41,7 @@
     width: 100%;
     height: 180px;
     overflow: hidden;
-    background: var(--border-color);
+    background: var(--surface-2);
 }
 
 .project-image img {
@@ -60,14 +63,16 @@
 }
 
 .project-info h3 {
-    font-size: 1.25rem;
+    font-family: 'Azeret Mono', monospace;
+    font-size: 1.05rem;
     font-weight: 700;
     color: var(--primary-color);
     margin-bottom: 0.5rem;
+    letter-spacing: 0.03em;
 }
 
 .project-info p {
-    font-size: 0.95rem;
+    font-size: 0.86rem;
     color: var(--secondary-color);
     margin-bottom: 1.25rem;
 }
@@ -80,14 +85,15 @@
 }
 
 .tag {
-    font-size: 0.75rem;
+    font-size: 0.68rem;
     font-weight: 600;
-    color: var(--accent-color);
-    background: rgba(216, 139, 23, 0.1);
-    padding: 4px 10px;
-    border-radius: 6px;
+    color: var(--primary-color);
+    background: var(--accent-soft);
+    border: 1px solid rgba(255, 122, 0, 0.45);
+    padding: 3px 9px;
+    border-radius: 4px;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.08em;
 }
 
 .project-links {
@@ -98,14 +104,16 @@
 
 .project-link {
     text-decoration: none;
-    font-size: 0.875rem;
+    font-size: 0.74rem;
     font-weight: 600;
     color: var(--primary-color);
     display: flex;
     align-items: center;
     gap: 5px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
 }
 
 .project-link:hover {
-    text-decoration: underline;
+    color: var(--accent-color);
 }

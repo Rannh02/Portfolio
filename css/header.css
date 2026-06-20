@@ -1,11 +1,11 @@
 header {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 15rem;
+    justify-content: space-between;
+    gap: 2rem;
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: 1.5rem 2rem;
+    padding: 1rem 2rem;
     border-bottom: 1px solid var(--border-color);
     background: var(--bg-color);
     position: sticky;
@@ -20,8 +20,11 @@ header {
     gap: 8px;
     text-decoration: none;
     color: var(--primary-color);
-    font-size: 1.25rem;
+    font-family: 'Azeret Mono', monospace;
+    font-size: 1.1rem;
     font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
 }
 
 nav {
@@ -32,13 +35,18 @@ nav {
 nav a {
     text-decoration: none;
     color: var(--secondary-color);
-    font-size: 1rem;
+    font-size: 0.86rem;
     font-weight: 500;
-    transition: color 0.3s ease;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    transition: color 0.3s ease, border-color 0.3s ease;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
 }
 
 nav a:hover {
     color: var(--primary-color);
+    border-color: var(--accent-color);
 }
 
 

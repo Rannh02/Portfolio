@@ -25,24 +25,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 100);
     });
 
-    // Tech Stack Toggle Logic
-    const stackToggle = document.getElementById('stackToggle');
-    const stackPanel = document.getElementById('stackPanel');
-    const arrowIcon = document.getElementById('arrowIcon');
-
-    if (stackToggle && stackPanel) {
-        stackToggle.addEventListener('click', () => {
-            const isOpen = stackToggle.classList.contains('open');
-            
-            if (isOpen) {
-                stackToggle.classList.remove('open');
-                stackPanel.classList.remove('open');
-                stackToggle.setAttribute('aria-expanded', 'false');
-            } else {
-                stackToggle.classList.add('open');
-                stackPanel.classList.add('open');
-                stackToggle.setAttribute('aria-expanded', 'true');
-            }
-        });
-    }
 });
