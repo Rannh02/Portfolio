@@ -4,60 +4,48 @@
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-  gap: 0.75rem;
+  gap: 0.4rem;
   margin: 1.6rem 0 0;
 }
 
 .stack-title {
-  font-family: 'Azeret Mono', monospace;
-  font-size: 0.74rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--secondary-color);
+  display: none;
 }
 
 /* Grid of icons */
 .stack-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(86px, 1fr));
-  gap: 0.75rem;
-  padding: 0.85rem;
-  width: min(100%, 760px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1.1rem;
+  padding: 0;
+  width: 100%;
   max-width: 760px;
-  background: var(--card-bg);
-  border-radius: 8px;
-  border: 1px solid var(--border-color);
 }
 
 .stack-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 5px;
-  min-height: 84px;
-  padding: 0.6rem 0.45rem;
-  background: var(--surface-2);
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
-  transition: transform 0.2s ease, border-color 0.2s ease;
+  min-width: 52px;
+  transition: transform 0.2s ease;
 }
 
 .stack-item:hover {
   transform: translateY(-4px);
-  border-color: var(--accent-color);
 }
 
 .stack-item img {
-  width: 30px;
-  height: 30px;
+  width: 34px;
+  height: 34px;
 }
 
 .stack-item span {
-  font-size: 0.58rem;
+  font-size: 0.6rem;
   color: var(--secondary-color);
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
   text-align: center;
 }
@@ -72,7 +60,8 @@
   }
 
   .stack-grid {
-    grid-template-columns: repeat(3, minmax(80px, 1fr));
-    width: min(100%, 360px);
+    justify-content: center;
+    max-width: 360px;
+    gap: 1rem;
   }
 }
