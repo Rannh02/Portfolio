@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/stack-toggle.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -19,7 +20,7 @@
         <nav>
             <a href="#about">About me</a>
             <a href="#projects">Projects</a>
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
@@ -199,13 +200,59 @@
                         <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Link</a>
                     </div>
                 </div>
-            </div> -->
-            
-
+            </div>
         </div>
     </section>
 
-    <script src="javascript/main.js"></script>
+    <hr class="divider">
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <p class="contact-subtitle">Feel free to reach out — I'm always open to new opportunities and collaborations.</p>
+
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <div class="contact-info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <span class="contact-info-label">Email</span>
+                        <a href="mailto:ralphdavid@email.com" class="contact-info-value">ralphdavidmillasoliva@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <i class="fa-brands fa-github"></i>
+                    <div>
+                        <span class="contact-info-label">GitHub</span>
+                        <a href="https://github.com/Rannh02" target="_blank" rel="noopener noreferrer" class="contact-info-value">github.com/Rannh02</a>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <i class="fa-brands fa-facebook"></i>
+                    <div>
+                        <span class="contact-info-label">Facebook</span>
+                        <a href="https://www.facebook.com/ralph.david.590257" target="_blank" rel="noopener noreferrer" class="contact-info-value">Ralph David</a>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <label for="contact-name">Name</label>
+                    <input type="text" id="contact-name" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Email</label>
+                    <input type="email" id="contact-email" placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" rows="5" placeholder="Your message..."></textarea>
+                </div>
+                <button type="submit" class="contact-submit">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <script src="javascript/Appearance.js"></script>
 </body>
 
 </html>
